@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html>
-    <head>
-       <title>
-            My website
-       </title> 
-    </head>
-    <body>
-        <h1>This is my GitHub Page</h1>
-    </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .bug-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .bug-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  .bug-description {
+    font-size: 18px;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+  <h1>This is my GitHub Page</h1>
+
+  <div class="bug-container">
+    <img class="bug-image" src="bug.png" alt="Bug Image">
+    <p class="bug-description">Oops! We found a bug.</p>
+  </div>
+</body>
 </html>
