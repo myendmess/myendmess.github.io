@@ -1,49 +1,46 @@
-/* General styles */
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #212121;
+  color: #fff;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Header */
 header {
-  background-color: #f2f2f2;
+  background-color: #333;
   padding: 20px;
   text-align: center;
 }
 
 header h1 {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
 }
 
-header div {
-  display: flex;
-  justify-content: space-between;
+header div a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 10px;
 }
 
-/* Main content */
 main {
   margin: 20px auto;
   max-width: 960px;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
+  background-color: #444;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Section titles */
-h2 {
-  font-size: 18px;
+section {
   margin-bottom: 20px;
 }
 
-/* Skills */
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -51,70 +48,25 @@ ul {
 
 li {
   margin-bottom: 10px;
+  a {
+    color: #fff;
+  }
 }
 
-/* Experience */
-.experience {
-  margin-bottom: 20px;
-}
-
-.experience h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
-}
-
-.experience ul {
-  padding-left: 15px;
-}
-
-/* Education */
-.education {
-  margin-bottom: 20px;
-}
-
-.education h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
-}
-
-.education ul {
-  padding-left: 15px;
-}
-
-/* Projects */
-.projects {
-  margin-bottom: 20px;
-}
-
-.projects p {
-  margin-bottom: 10px;
-}
-
-/* Awards and Recognition */
-.awards {
-  margin-bottom: 20px;
-}
-
-.awards ul {
-  list-style: none;
-  padding: 0;
-}
-
-.awards li {
-  margin-bottom: 10px;
-}
-
-/* References */
 footer {
-  background-color: #f2f2f2;
+  background-color: #212121;
   padding: 20px;
   text-align: center;
 }
 
 footer p {
+  color: #fff;
   font-size: 12px;
 }
+
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+}
+
