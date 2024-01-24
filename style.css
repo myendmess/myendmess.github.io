@@ -1,195 +1,282 @@
-$color-black: #161616;
-$color-white: #fff;
-$size: 170px; // (Fully responsive)
-
-// Cat
-.cat {
-	position: relative;
-	height: $size;
-	width: $size * 1.13;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border:0pt none;
+	font-family:inherit;
+	font-size:100%;
+	font-style:inherit;
+	font-weight:inherit;
+	margin:0pt;
+	outline-color:invert;
+	outline-style:none;
+	outline-width:0pt;
+	padding:0pt;
+	vertical-align:baseline;
+}
+table {
+	border-collapse:separate;
+	border-spacing:0pt;
+}
+caption, th, td {
+	font-weight:normal;
+	text-align:left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content:"";
+}
+blockquote, q {
+	quotes:"" "";
+}
+strong, b {
+	font-weight:bold;
+}
+em, i {
+	font-style:italic;
+}
+* {
+	margin:0pt;
+	padding:0pt;
 }
 
-// Ears
-.ear {
-	position: absolute;
-	top: -30%;
-	height: 60%;
-	width: 25%;
-	background: $color-white;
+body {
+	background:#151d30;
+	font-size:12px;
+	font-family:arial, sans-serif;
 	
-	// Ear hair
-	&::before,
-	&::after {
-		content: '';
-		position: absolute;
-		bottom: 24%;
-		height: 10%;
-		width: 5%;
-		border-radius: 50%;
-		background: $color-black;
-	}
-	
-	&::after {
-		transform-origin: 50% 100%;
-	}
 }
 
-.ear--left {
-	left: -7%;
-	border-radius: 70% 30% 0% 0% / 100% 100% 0% 0%;
-	transform: rotate(-15deg);
-	
-	&::before,
-	&::after {
-		right: 10%;
-	}
-	
-	&::after {
-		transform: rotate(-45deg);
-	}
+a {
+	color:#fefefe;
+	text-decoration:none;
 }
 
-.ear--right {
-	right: -7%;
-	border-radius: 30% 70% 0% 0% / 100% 100% 0% 0%;
-	transform: rotate(15deg);
-	
-	&::before,
-	&::after {
-		left: 10%;
-	}
-	
-	&::after {
-		transform: rotate(45deg);
-	}
+a:hover {
+	color:#fefefe;
+	text-decoration:none;
 }
 
-// Face
-.face {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background: $color-black;
-	border-radius: 50%;
+#top {
+	height:220px;
+	display:none;
 }
 
-// Eyes
-.eye {
-	position: absolute;
-	top: 35%;
-	height: 30%;
-	width: 31%;
-	background: $color-white;
-	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-	
-	// Eyelids
-	&::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 0;
-		width: 100%;
-		border-radius: 0 0 50% 50% / 0 0 40% 40%;
-		background: $color-black;
-		animation: blink 4s infinite ease-in;
-	}
-	
-	@keyframes blink {
-		0% { height: 0; }
-		90% { height: 0; }
-		92.5% { height: 100%; }
-		95% { height: 0; }
-		97.5% { height: 100%; }
-		100% { height: 0; }
-	}
-	
-	// Tips of the eyes
-	&::before {
-		content: '';
-		position: absolute;
-		top: 60%;
-		height: 10%;
-		width: 15%;
-		background: $color-white;
-		border-radius: 50%;
-	}
+#wrapper {
+	width:100%;
+	background:url(images/headerbg.jpg) center top no-repeat;
+	margin:-4px 0 0 0;
 }
 
-.eye--left {
-	left: 0;
+.content {
+	width:940px;
+	margin:0px auto;	
 	
-	&::before {
-		right: -5%;
-	}
 }
 
-.eye--right {
-	right: 0;
+#header {
+	padding:35px 0px 35px 0px;
+	color:#fff;
 	
-	&::before {
-		left: -5%;
-	}
 }
 
-// Pupils
-.eye-pupil {
-	position: absolute;
-	top: 25%;
-	height: 50%;
-	width: 20%;
-	background: $color-black;
-	border-radius: 50%;
-	animation: look-around 4s infinite;
-	
-	@keyframes look-around {
-		0% { transform: translate(0) }
-		5% { transform: translate(50%, -25%) }
-		10% { transform: translate(50%, -25%) }
-		15% { transform: translate(-100%, -25%) }
-		20% { transform: translate(-100%, -25%) }
-		25% { transform: translate(0, 0) }
-		100% { transform: translate(0, 0) }
-	}
-	
-	.eye--left & {
-		right: 30%;
-	}
-	
-	.eye--right & {
-		left: 30%;
-	}
-	
-	// Glare on the pupil
-	&::after {
-		content: '';
-		position: absolute;
-		top: 30%;
-		right: -5%;
-		height: 20%;
-		width: 35%;
-		border-radius: 50%;
-		background: $color-white;
-	}
+h1{
+	margin:43px 0 0 0px;
+	padding:0px 0 0 70px;
+	background:url(images/logo.png) left top no-repeat;
+	font-size:60px;
+	font-weight:bold;
+	font-family:"myriad pro";
+	color:#fff;
 }
 
-// Muzzle
-.muzzle {
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	height: 6%;
-	width: 10%;
-	background: $color-white;
-	transform: translateX(-50%);
-	border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+h1 a{
+	color:#fff;
+	display:block;
 }
 
-/* General page styling */
-html {
-	height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-	background: $color-black;
+h1 a:hover{
+	color:#fff;
+}
+h1 a span{
+	font-size:16px;
+	font-weight:bold;
+	color:#cfe7f1;
+	display:block;
+	text-transform:uppercase;
+	font-weight:normal;
+	position:absolute;
+}
+
+#menu ul {
+	font-size:30px;
+	list-style:none;
+	color:#fffdbf;
+	text-align:center;
+	margin:100px 0 0 0;
+}
+
+#menu ul li{
+	display:inline;
+}
+
+#menu ul li a{
+	color:#fffdbf;	
+	display:inline-block;
+	padding:12px 22px;
+	line-height:27px;
+	text-decoration:none;
+}
+
+#menu ul li a:hover{
+	color:#fff;	
+}
+
+#menu ul li.selected a{
+	color:#fffdbf;
+	background:url(images/menuhover.png) repeat;	
+	border-end-end-radius: 3px;
+	border-image-repeat: 3px;
+
+}
+
+#container {
+	width:636px;
+}
+
+#container img{
+	padding:0px 15px 15px 0px;
+}
+
+.sidebar {
+	width:295px;	
+	float:right;
+	padding:0px 0 0 0px;
+}
+
+.sidebar img{
+	margin:0px 7px 15px 0px;
+}
+
+#footer .sidebar img{
+	width:140px;
+	height:141px;
+}
+
+.sidebar img.noright{
+	margin-right:0px;
+}
+
+#footer {
+	background:url(images/footerline.jpg) left top repeat-x #0e1424;
+	clear:both;
+		margin:20px 0 0px 0;
+}
+
+#footer .content {
+	background:url(images/footer.jpg) center top no-repeat #0e1424;
+	padding:30px 0 115px 0;
+}
+
+h3 {
+	font-size:16px;
+	color:#fefefe;
+	padding:0 0 10px 0;
+}
+
+#footer p {
+ 	font-size:15px;
+	color:#fefefe;
+	padding:5px 0;
+}
+
+#footer p a:hover{
+ 	text-decoration:underline;
+	color:#fefefe;
+	
+}
+
+#left {
+	float:left;
+	width:200px;
+	padding:0 100px 0 0;
+}
+
+h4 {
+	font-family:"Myriad Pro";
+	font-size:30px;
+	font-weight:bold;
+	color:#fffdbf;
+	padding:40px 0 12px 0;
+}
+
+#top {
+	background:#152e46;
+}
+#top p {
+	font-size:16px;
+	font-family:Arial;
+	color:#97b6d3;
+	line-height:22px;
+	padding:0 0 10px 0;
+}
+
+h5 {
+	display:inline-block;
+	padding:17px 0;
+	font-family:"Myriad Pro";
+	font-weight:bold;
+}
+
+h5 a{
+	margin:0px 25px 0px 0px;
+	color:#fffdbf;
+	font-size:22px;
+
+}
+
+h5 a:hover{
+	text-decoration:underline;
+	color:#fffdbf;
+
+}
+
+#insidetop {
+	margin:0 auto;
+	width:840px;
+}
+
+#topline {
+	clear:both;
+	background:url(images/atop.png) left top repeat-x;
+	height:44px;
+}
+
+#topline .content {
+	text-align:right;
+}
+
+#topline .content a{
+	display:inline-block;
+	width:204px;
+	height:34px;
+	background:url(images/network.png) left top no-repeat;
+	text-align:center;
+	cursor:pointer;
+	padding:10px 0 0 0;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	text-transform:uppercase;
+}
+
+#footer .content a span.leftp {
+	font-size:11px;
+	color:#41536a;
+	float:left;
+	text-transform:uppercase;
+	margin:90px 0 15px 0;
+}
+
+#footer .content a span.rightp {
+	font-size:11px;
+	color:#41536a;
+	float:right;
+	text-transform:uppercase;
+	margin:90px 0 15px 0;
 }
