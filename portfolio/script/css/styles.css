@@ -314,10 +314,10 @@ canvas.particles-js-canvas-el{
 }
 
 /* Individual Skill Widths */
-.skills__cloud { width: 60%; }
-.skills__linux { width: 70%; }
-.skills__py { width: 75%; }
-.skills__harden { width: 70%; }
+.skills__cloud { width: 100%; }
+.skills__linux { width: 100%; }
+.skills__py { width: 100%; }
+.skills__harden { width: 100%; }
 
 /* Skill Image */
 .skills__img {
