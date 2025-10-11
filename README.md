@@ -18,7 +18,7 @@ This project leverages the following technologies:
 
 ## 📁 Project Structure
 
-```console
+
 Tree
 ├── style
 │   └── style.css
@@ -56,7 +56,7 @@ Tree
 └── README.md
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
-🚀 How to Use
+## 🚀 How to Use
 To run this project locally:
 
 Clone the repository:
@@ -68,13 +68,13 @@ Open index.html in your favorite browser.
 
 Customize the content, images, and styles as needed.
 
-🤝 Open Source & Donations
+## 🤝 Open Source & Donations
 This project is completely open source, which means you can freely explore the code, use it for your own projects, or contribute improvements.
 
 If you enjoy this project and would like to support me, you can make a small donation via PayPal.
 Donations are voluntary and help me continue creating free, open source projects for the community. Every contribution, big or small, is greatly appreciated.
 
-💖 Donate via PayPal
+## 💖 Donate via PayPal
 
 Thank you for your support! Your donation helps me maintain and improve this project and future open source work.
 
