@@ -43,7 +43,7 @@ Thank you for your support! Your donation helps me maintain and improve this pro
 
 ## 📁 Project Structure
 
-'''console
+```console
 Tree
 ├── style
 │   └── style.css
