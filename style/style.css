@@ -67,6 +67,7 @@ canvas.particles-js-canvas-el{
 }
 .hero_section .row button{
     display: inline-block;
+    margin: 8px 10px 0 0;
     border-radius: 10px;
     font-size: 19px;
     color: white;
