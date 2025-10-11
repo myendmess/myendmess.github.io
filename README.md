@@ -71,7 +71,8 @@ Customize the content, images, and styles as needed.
 🤝 Open Source & Donations
 This project is completely open source, which means you can freely explore the code, use it for your own projects, or contribute improvements.
 
-If you enjoy this project and would like to support me, you can make a small donation via PayPal. Donations are voluntary and help me continue creating free, open source projects for the community. Every contribution, big or small, is greatly appreciated.
+If you enjoy this project and would like to support me, you can make a small donation via PayPal.
+Donations are voluntary and help me continue creating free, open source projects for the community. Every contribution, big or small, is greatly appreciated.
 
 💖 Donate via PayPal
 
