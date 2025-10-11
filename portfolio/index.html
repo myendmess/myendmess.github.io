@@ -1,181 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Mess</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Mess</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./script/css/styles.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Font Awesome (v6.5.0 only) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
-    <!-- Boxicons JS -->
-    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+  <!-- Boxicons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./script/css/styles.css" />
+
+  <!-- Boxicons JS -->
+  <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 </head>
+
 <body>
-    <!-- Header -->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="javascript:history.back()" class="nav__logo">Mess</a>
-            </div>
+  <!-- Particles background -->
+  <div id="particles-js"></div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
+  <!-- Header -->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="javascript:history.back()" class="nav__logo">Mess</a>
+      </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-    </header>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
 
-    <!-- Main Content -->
-    <main class="l-main">
-        <!-- Home Section -->
-        <section class="home bd-grid" id="home">
-  <div class="home__data">
-    <h1 class="home__title">
-      Hi,<br>I'm <span class="home__title-color">Mohamed</span>,<br> your ERP Consultant
-    </h1>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Buttons -->
-    <a href="img/EUP.pdf" class="button" target="_blank">EUROPASS</a>
-    <a href="myendmess/myendmess.github.io/portfolio/img/GoogleDataAnalyticsProfessionalCertificatev2_Badge20251007-32-84ega6.pdf" class="button" target="_blank">CERTIFICATIONS</a>
-  </div>
-</section>
+  <!-- Main Content -->
+  <main class="l-main">
+    <!-- Home Section -->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">
+          Hi,<br />I'm <span class="home__title-color">Mohamed</span>,<br />
+          your IT Professional Consultant!
+        </h1>
 
+        <!-- Buttons -->
+        <a href="img/EUP.pdf" class="button" target="_blank">EUROPASS</a>
+        <a
+          href="https://www.credly.com/badges/0693567e-025f-4bfc-ba9d-d1e1e4e23c0b/public_url"
+          class="button"
+          target="_blank"
+        >
+          CERTIFICATIONS
+        </a>
 
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/mohamed-boujnane-06a3532bb" class="home__social-icon" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/myendmess" class="home__social-icon" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-            </div>
-
-            <div class="home__img">    
-                <img src="./img/profile.png" alt="Profile Picture">
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="./img/ayanokoji.gif" alt="Ayanokoji Gif">
-                </div>
-                
-                <div>
-                    <h2 class="about__subtitle">Tailored Infor LN Consulting</h2>
-                    <p class="about__text">Boost your business performance with expert LN consulting! As a specialized LN consultant,<br> 
-                        I provide tailored solutions to help you maximize the value of your ERP investment.<br>
-                        Let’s transform your operations and achieve your business goals together!</p>           
-                </div>                                   
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-
-            <div class="skills__container bd-grid">          
-                <div>
-                    <h2 class="skills__subtitle">Professional Skills</h2>
-                    <p class="skills__text">I am passionate about computer science, languages, and cultures, and I have traveled extensively.</p>
-                    
-                    <!-- Skill Items -->
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='fab fa-docker skills__icon'></i>
-                            <span class="skills__name">Docker</span>
-                        </div>
-                        <div class="skills__bar skills__docker"></div>
-                        <div>
-                            <span class="skills__percentage">60%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='fab fa-linux skills__icon'></i>
-                            <span class="skills__name">Linux</span>
-                        </div>
-                        <div class="skills__bar skills__linux"></div>
-                        <div>
-                            <span class="skills__percentage">70%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='fab fa-python skills__icon'></i>
-                            <span class="skills__name">Python</span>
-                        </div>
-                        <div class="skills__bar skills__py"></div>
-                        <div>
-                            <span class="skills__percentage">75%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class="fas fa-palette skills__icon"></i>
-                            <span class="skills__name">Creativity</span>
-                        </div>
-                        <div class="skills__bar skills__harden"></div>
-                        <div>
-                            <span class="skills__percentage">99%</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div>              
-                    <img src="./img/profile.png" alt="Profile" class="skills__img">
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="email" placeholder="Email" class="contact__input">
-                    <textarea name="message" placeholder="Message" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="submit" value="Send" class="contact__button button">
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p class="footer__title">Social Media</p>
-        <div class="footer__social">
-            <a href="https://github.com/myendmess" class="footer__icon" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/mohamed-boujnane-06a3532bb/" class="footer__icon" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+        <!-- Embedded Credly badge -->
+        <div class="badge-container" style="margin-top: 20px; text-align: center;">
+          <div
+            data-iframe-width="180"
+            data-iframe-height="300"
+            data-share-badge-id="0693567e-025f-4bfc-ba9d-d1e1e4e23c0b"
+            data-share-badge-host="https://www.credly.com"
+          ></div>
+          <script
+            type="text/javascript"
+            async
+            src="//cdn.credly.com/assets/utilities/embed.js"
+          ></script>
         </div>
-        <p>&#169; 2020 All rights reserved.</p>
-    </footer>
+      </div>
 
-    <!-- JavaScript Files -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./script/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS.load('particles-js', 'particles.json', function(){
-            console.log('particles.json loaded...')
+      <!-- Home Social Links -->
+      <div class="home__social">
+        <a
+          href="https://www.linkedin.com/in/mohamed-boujnane-06a3532bb"
+          class="home__social-icon"
+          aria-label="LinkedIn"
+        >
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/myendmess"
+          class="home__social-icon"
+          aria-label="GitHub"
+        >
+          <i class="bx bxl-github"></i>
+        </a>
+      </div>
+
+      <!-- Home Image -->
+      <div class="home__img">
+        <img src="./img/profile.png" alt="Profile Picture" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="./img/ayanokoji.gif" alt="Ayanokoji Gif" />
+        </div>
+
+        <div>
+          <h2 class="about__subtitle">Tailored Infor IT Consulting</h2>
+          <p class="about__text">
+            Enhance your business performance with expert ERP consulting.<br />
+            I deliver tailored solutions for both on-premise and cloud-based ERP systems,<br />
+            helping you optimize operations and maximize the value of your technology
+            investments.<br />
+            Let’s transform your enterprise and achieve your strategic goals together.<br />
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills__container bd-grid">
+        <!-- Left column: Text + Skills -->
+        <div>
+          <h2 class="skills__subtitle">Professional Skills</h2>
+          <p class="skills__text">
+            IT and Cloud Analyst with a strong focus on intelligent automation and computer
+            science, complemented by international experience and a deep appreciation for
+            languages and cultures.
+          </p>
+
+          <!-- Skill Items -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="fa-solid fa-cloud"></i>
+              <span class="skills__name">Cloud</span>
+            </div>
+            <div class="skills__bar skills__docker"></div>
+            <div>
+              <span class="skills__percentage">60%</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="fa-brands fa-linux skills__icon"></i>
+              <span class="skills__name">OS</span>
+            </div>
+            <div class="skills__bar skills__linux"></div>
+            <div>
+              <span class="skills__percentage">70%</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="fa-brands fa-python skills__icon"></i>
+              <span class="skills__name">Programming</span>
+            </div>
+            <div class="skills__bar skills__py"></div>
+            <div>
+              <span class="skills__percentage">75%</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="fa-solid fa-database"></i>
+              <span class="skills__name">Databases</span>
+            </div>
+            <div class="skills__bar skills__harden"></div>
+            <div>
+              <span class="skills__percentage">70%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: Image -->
+        <div>
+          <img src="./img/profile.png" alt="Profile" class="skills__img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact__container bd-grid">
+        <form
+          action="https://formspree.io/f/mjkaappp"
+          method="POST"
+          class="contact__form"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            class="contact__input"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="contact__input"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            cols="0"
+            rows="10"
+            class="contact__input"
+            required
+          ></textarea>
+          <input type="submit" value="Send" class="contact__button button" />
+        </form>
+      </div>
+
+      <script>
+        const form = document.querySelector('.contact__form');
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const data = new FormData(form);
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: { Accept: 'application/json' },
+          });
+          if (response.ok) {
+            alert('✅ Thank you! Your message has been sent.');
+            form.reset();
+          } else {
+            alert('❌ Oops! Something went wrong. Please try again.');
+          }
         });
-    </script>
-    <script src="./script/js/app.js"></script>
-    <script src="./script/js/particles.js"></script>
+      </script>
+    </section>
+  </main>
 
-    <!-- Particles JS -->
-    <div id="particles-js"></div>
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__title">Social Media</p>
+    <div class="footer__social">
+      <a
+        href="https://github.com/myendmess"
+        class="footer__icon"
+        aria-label="GitHub"
+        ><i class="bx bxl-github"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/mohamed-boujnane-06a3532bb/"
+        class="footer__icon"
+        aria-label="LinkedIn"
+        ><i class="bx bxl-linkedin"></i
+      ></a>
+    </div>
+    <p>&#169; 2021 All rights reserved to Mohamed Boujnane.</p>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./script/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function () {
+      console.log('particles.json loaded...');
+    });
+  </script>
+  <script src="./script/js/app.js"></script>
+  <script src="./script/js/particles.js"></script>
 </body>
 </html>
