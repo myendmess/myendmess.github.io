@@ -15,17 +15,6 @@ This project leverages the following technologies:
 - **Responsive Design** – Works on multiple screen sizes and devices.
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
-## 🚀 How to Use
-To run this project locally:
-
-# Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/myendmess/portfolio.git
-Open index.html in your favorite browser.
-
-Customize the content, images, and styles as needed.
 
 ## 🤝 Open Source & Donations
 This project is completely open source, which means you can freely explore the code, use it for your own projects, or contribute improvements.
