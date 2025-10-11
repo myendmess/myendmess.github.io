@@ -37,7 +37,9 @@ Donations are voluntary and help me continue creating free, open source projects
 
 Thank you for your support! Your donation helps me maintain and improve this project and future open source work.
 
-<img src=""></p>
+<img src="">img/qrcode.png</p>
+[Support the project on PayPal](https://paypal.me/myendingmess?country.x=IT&locale.x=en_US)
+
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
 
