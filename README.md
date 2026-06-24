@@ -1,30 +1,37 @@
-# Page Portfolio With Particle JS
+# Mohamed Boujnane — Portfolio
 
-Welcome to my **Portfolio Page** project! This is a personal portfolio website built with modern web technologies and enhanced with **Particle JS** for interactive background effects. The project is fully **open source**, so other developers are welcome to explore, use, or contribute.
+Personal portfolio site for **Mohamed Boujnane** — IT & AI Consultant working where
+technology meets finance (FinTech, data engineering, AI automation). Dark by default,
+fast, and fully static — it serves straight from GitHub Pages with no build step.
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
+🔗 **Live:** [myendmess.github.io](https://myendmess.github.io)
 
 ## 🛠 Technologies Used
 
-This project leverages the following technologies:
+- **HTML5 & CSS3** – semantic structure, CSS custom properties, glassmorphism, and a
+  responsive grid layout (mobile → desktop).
+- **Vanilla JavaScript** – mobile navigation, scroll-reveal animations
+  (`IntersectionObserver`), and a lightweight `<canvas>` constellation background.
+  No frameworks, no dependencies.
+- **Google Fonts** – Inter (sans) + JetBrains Mono (mono).
+- **Design** – dark-default theme with amber/orange neon accents, `prefers-reduced-motion`
+  fallbacks, and an inline SVG favicon (zero extra requests).
+- **No build step** – plain files deployed as-is via GitHub Pages.
 
-- **HTML5 & CSS3** – Structure and styling of the webpage.
-- **JavaScript** – Interactive features and functionality.
-- **Particle JS** – Dynamic particle background effects.
-- **SCSS** – CSS preprocessor for cleaner and reusable styles.
-- **Responsive Design** – Works on multiple screen sizes and devices.
+## 🧭 Sections
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
+- **Hero** – introduction and core stack.
+- **Stack** – data & BI, AI/ML & cloud, FinTech & market data, ERP, and DevOps tooling.
+- **Experience** – a scannable career timeline.
+- **Projects** – algorithmic market scanners, AI/audio work, GitHub automation, and data pipelines.
+- **Contact** – email, GitHub, and LinkedIn.
 
 ## 🤝 Open Source & Donations
-This project is completely open source, which means you can freely explore the code, use it for your own projects, or contribute improvements.
 
-If you enjoy this project and would like to support me, you can make a small donation via PayPal.
-Donations are voluntary and help me continue creating free, open source projects for the community. Every contribution, big or small, is greatly appreciated.
+This project is open source — feel free to explore the code, reuse it, or contribute.
 
-## 💖 Donate via PayPal
-
-Thank you for your support! Your donation helps me maintain and improve this project and future open source work.
+If you'd like to support my work, you can make a small, voluntary donation via PayPal.
+Every contribution, big or small, is greatly appreciated.
 
 <p align="center">
   <a href="https://paypal.me/myendingmess?country.x=IT&locale.x=en_US" target="_blank">
@@ -32,45 +39,20 @@ Thank you for your support! Your donation helps me maintain and improve this pro
   </a>
 </p>
 
-
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
-
 ## 📁 Project Structure
 
 ```console
-Tree
+├── index.html          # Redesigned homepage (hero, stack, timeline, projects, contact)
 ├── style
-│   └── style.css
-├── portfolio
-│   ├── index.html
-│   ├── img
-│   │   ├── ayanokoji.gif
-│   │   ├── bg.gif
-│   │   ├── icon.jpg
-│   │   ├── kiyo.jpg
-│   │   ├── output.jpg
-│   │   └── profile.png
-│   ├── script
-│   │   ├── css
-│   │   │   └── style.css
-│   │   └── js
-│   │       ├── app.js
-│   │       ├── main.js
-│   │       ├── particles.min.js
-│   │       └── particles.js
-│   └── scss          
-│       └── styles.scss
+│   └── style.css       # Dark glassmorphism / neon theme
 ├── js
-│   ├── app.js
-│   ├── bower.json
-│   ├── package.json
-│   ├── particles.min.js
-│   └── particles.js
+│   └── main.js         # Mobile nav, scroll-reveal, constellation canvas
 ├── img
-│   ├── icon.jpg
-│   ├── kiyo.jpg
-│   └── output.jpg
-├── index.html
+│   └── qrcode.png      # PayPal donation QR
+├── portfolio           # Earlier portfolio sub-site (kept, self-contained)
+│   ├── index.html
+│   ├── img/
+│   └── script/         # css / js / scss
 ├── LICENSE
 └── README.md
+```
