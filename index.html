@@ -16,12 +16,12 @@
     <meta property="og:url" content="https://myendmess.github.io/" />
 
     <!-- Inline SVG favicon: neon monogram, zero requests -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2322d3ee'/%3E%3Cstop offset='1' stop-color='%237c5cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23070b14'/%3E%3Crect x='1.5' y='1.5' width='61' height='61' rx='14.5' fill='none' stroke='url(%23g)' stroke-width='2'/%3E%3Ctext x='32' y='44' font-family='monospace' font-size='34' font-weight='700' fill='url(%23g)' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fbbf24'/%3E%3Cstop offset='1' stop-color='%23fb923c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23070b14'/%3E%3Crect x='1.5' y='1.5' width='61' height='61' rx='14.5' fill='none' stroke='url(%23g)' stroke-width='2'/%3E%3Ctext x='32' y='44' font-family='monospace' font-size='34' font-weight='700' fill='url(%23g)' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
 
     <!-- Fonts: preconnected, swap so text paints immediately -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="./style/style.css" />
 </head>
@@ -34,7 +34,7 @@
         <canvas id="constellation"></canvas>
     </div>
 
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
 
     <!-- ============ NAV ============ -->
     <header class="nav" id="top">
@@ -46,14 +46,22 @@
 
             <nav class="nav__links" id="nav-links" aria-label="Primary">
                 <a href="#stack">Stack</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact" class="nav__cta">Contact</a>
+                <a href="#experience" data-i18n="nav.exp">Experience</a>
+                <a href="#projects" data-i18n="nav.proj">Projects</a>
+                <a href="#contact" class="nav__cta" data-i18n="nav.contact">Contact</a>
             </nav>
 
-            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
-                <span></span><span></span><span></span>
-            </button>
+            <div class="nav__right">
+                <div class="lang" id="lang-switch" role="group" aria-label="Language">
+                    <button type="button" data-lang="en" class="active">EN</button>
+                    <button type="button" data-lang="it">IT</button>
+                    <button type="button" data-lang="fr">FR</button>
+                    <button type="button" data-lang="ja" lang="ja">日本語</button>
+                </div>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -64,13 +72,13 @@
                 <div class="hero__copy">
                     <p class="eyebrow reveal">
                         <span class="status-dot"></span>
-                        IT &amp; AI Consultant · FinTech &amp; Data
+                        <span data-i18n="hero.eyebrow">IT &amp; AI Consultant · FinTech &amp; Data</span>
                     </p>
-                    <h1 class="hero__title reveal">
+                    <h1 class="hero__title reveal" data-i18n="hero.title">
                         I build where <span class="grad">technology</span><br />
                         meets <span class="grad grad--alt">finance</span>.
                     </h1>
-                    <p class="hero__lede reveal">
+                    <p class="hero__lede reveal" data-i18n="hero.lede">
                         Data &amp; AI specialist turning raw market data into decisions. I engineer
                         data pipelines with <strong>dbt, Snowflake &amp; Databricks</strong>, automate
                         workflows with <strong>AI &amp; multi-agent orchestration</strong>, and build
@@ -78,7 +86,7 @@
                         strategy and technical automation.
                     </p>
                     <div class="hero__actions reveal">
-                        <a class="btn btn--primary" href="#projects">View Projects</a>
+                        <a class="btn btn--primary" href="#projects" data-i18n="hero.cta1">View Projects</a>
                         <a class="btn btn--ghost" href="https://github.com/myendmess" target="_blank" rel="noopener">
                             GitHub <span aria-hidden="true">↗</span>
                         </a>
@@ -120,9 +128,9 @@
         <section class="section" id="stack">
             <div class="container">
                 <header class="section__head reveal">
-                    <span class="section__kicker">// core stack</span>
-                    <h2 class="section__title">The toolkit</h2>
-                    <p class="section__sub">From raw tables to reporting models, AI orchestration, and market data — the stack I work in every day.</p>
+                    <span class="section__kicker" data-i18n="stack.kicker">// core stack</span>
+                    <h2 class="section__title" data-i18n="stack.title">The toolkit</h2>
+                    <p class="section__sub" data-i18n="stack.sub">From raw tables to reporting models, AI orchestration, and market data — the stack I work in every day.</p>
                 </header>
 
                 <div class="stack-grid">
@@ -169,9 +177,9 @@
         <section class="section" id="experience">
             <div class="container">
                 <header class="section__head reveal">
-                    <span class="section__kicker">// career</span>
-                    <h2 class="section__title">Experience</h2>
-                    <p class="section__sub">A path from IT and ERP into data engineering, AI, and financial automation.</p>
+                    <span class="section__kicker" data-i18n="exp.kicker">// career</span>
+                    <h2 class="section__title" data-i18n="exp.title">Experience</h2>
+                    <p class="section__sub" data-i18n="exp.sub">A path from IT and ERP into data engineering, AI, and financial automation.</p>
                 </header>
 
                 <ol class="timeline">
@@ -183,9 +191,9 @@
                             </div>
                             <span class="timeline__org">Integral Ad Science</span>
                             <ul class="timeline__bullets">
-                                <li>Designed end-to-end data pipelines, raw tables to reporting models, with dbt, Looker, LookML, Snowflake, Databricks &amp; Tableau.</li>
-                                <li>Leveraged AI-assisted development (Cursor) and prompt engineering to plan and automate multi-agent workflows.</li>
-                                <li>Managed versioning &amp; deployment through Git and CI/CD, releasing to main.</li>
+                                <li data-i18n="exp.b1a">Designed end-to-end data pipelines, raw tables to reporting models, with dbt, Looker, LookML, Snowflake, Databricks &amp; Tableau.</li>
+                                <li data-i18n="exp.b1b">Leveraged AI-assisted development (Cursor) and prompt engineering to plan and automate multi-agent workflows.</li>
+                                <li data-i18n="exp.b1c">Managed versioning &amp; deployment through Git and CI/CD, releasing to main.</li>
                             </ul>
                             <ul class="taglist taglist--sm">
                                 <li>dbt</li><li>Snowflake</li><li>Databricks</li><li>Looker</li><li>CI/CD</li>
@@ -201,9 +209,9 @@
                             </div>
                             <span class="timeline__org">Altea IN · Milan, Italy</span>
                             <ul class="timeline__bullets">
-                                <li>Led implementation across Sales (Order-to-Cash), Procurement (Purchase-to-Pay), Quality, and Warehouse Management.</li>
-                                <li>Captured and translated cross-functional business requirements into working solutions.</li>
-                                <li>Built training materials, ran UAT sessions, and tuned functionality after go-live.</li>
+                                <li data-i18n="exp.b2a">Led implementation across Sales (Order-to-Cash), Procurement (Purchase-to-Pay), Quality, and Warehouse Management.</li>
+                                <li data-i18n="exp.b2b">Captured and translated cross-functional business requirements into working solutions.</li>
+                                <li data-i18n="exp.b2c">Built training materials, ran UAT sessions, and tuned functionality after go-live.</li>
                             </ul>
                             <ul class="taglist taglist--sm">
                                 <li>Infor LN</li><li>O2C</li><li>P2P</li><li>UAT</li>
@@ -219,8 +227,8 @@
                             </div>
                             <span class="timeline__org">Randstad Technologies Italia · Milan, Italy</span>
                             <ul class="timeline__bullets">
-                                <li>Built a conversational AI chatbot with Azure Cognitive Services: Text-to-Speech, Speech-to-Text, and NLP.</li>
-                                <li>Implemented intent recognition with LUIS for natural, human-like interactions.</li>
+                                <li data-i18n="exp.b3a">Built a conversational AI chatbot with Azure Cognitive Services: Text-to-Speech, Speech-to-Text, and NLP.</li>
+                                <li data-i18n="exp.b3b">Implemented intent recognition with LUIS for natural, human-like interactions.</li>
                             </ul>
                             <ul class="taglist taglist--sm">
                                 <li>Azure</li><li>TTS / STT</li><li>NLP</li><li>LUIS</li>
@@ -236,32 +244,32 @@
                             </div>
                             <span class="timeline__org">Zucchetti · Lodi, Italy</span>
                             <ul class="timeline__bullets">
-                                <li>Developed and maintained web applications at a leading Italian software company.</li>
+                                <li data-i18n="exp.b4a">Developed and maintained web applications at a leading Italian software company.</li>
                             </ul>
                         </div>
                     </li>
                 </ol>
 
-                <p class="timeline__earlier reveal">Earlier: multilingual customer operations (Teleperformance) and international air &amp; ocean export logistics (F.lli Di Martino).</p>
+                <p class="timeline__earlier reveal" data-i18n="exp.earlier">Earlier: multilingual customer operations (Teleperformance) and international air &amp; ocean export logistics (F.lli Di Martino).</p>
 
                 <!-- Education & certifications strip -->
                 <div class="credentials">
                     <div class="glass cred reveal">
-                        <span class="cred__kicker">// education</span>
+                        <span class="cred__kicker" data-i18n="cred.edu">// education</span>
                         <ul class="cred__list">
-                            <li><strong>IFOA</strong> — Technician of Economic-Financial IT Applications · Business Admin &amp; Management <span>2024–25</span></li>
-                            <li><strong>CFP Bauer — AFOL</strong> — Logistics, Materials &amp; Supply Chain Management <span>2021–22</span></li>
-                            <li><strong>I.T.I. Alessandro Volta</strong> — Diploma, Computer Science &amp; IT (EQF 4) <span>2016–21</span></li>
+                            <li data-i18n="edu1"><strong>IFOA</strong> — Technician of Economic-Financial IT Applications · Business Admin &amp; Management <span>2024–25</span></li>
+                            <li data-i18n="edu2"><strong>CFP Bauer — AFOL</strong> — Logistics, Materials &amp; Supply Chain Management <span>2021–22</span></li>
+                            <li data-i18n="edu3"><strong>I.T.I. Alessandro Volta</strong> — Diploma, Computer Science &amp; IT (EQF 4) <span>2016–21</span></li>
                         </ul>
                     </div>
                     <div class="glass cred reveal">
-                        <span class="cred__kicker">// certifications</span>
+                        <span class="cred__kicker" data-i18n="cred.certs">// certifications</span>
                         <ul class="taglist taglist--sm">
                             <li>Google Advanced Data Analytics</li>
                             <li>Google Data Analytics</li>
                             <li>Google Business Intelligence</li>
                         </ul>
-                        <span class="cred__kicker cred__kicker--mt">// languages</span>
+                        <span class="cred__kicker cred__kicker--mt" data-i18n="cred.langs">// languages</span>
                         <ul class="taglist taglist--sm">
                             <li>Italian — Native</li><li>English — C2</li><li>French — C1</li><li>Arabic — Fluent</li>
                         </ul>
@@ -274,19 +282,19 @@
         <section class="section" id="projects">
             <div class="container">
                 <header class="section__head reveal">
-                    <span class="section__kicker">// build log</span>
-                    <h2 class="section__title">Projects</h2>
-                    <p class="section__sub">Active work across algorithmic market scanning, AI automation, and data engineering.</p>
+                    <span class="section__kicker" data-i18n="proj.kicker">// build log</span>
+                    <h2 class="section__title" data-i18n="proj.title">Projects</h2>
+                    <p class="section__sub" data-i18n="proj.sub">Active work across algorithmic market scanning, AI automation, and data engineering.</p>
                 </header>
 
                 <div class="projects-grid">
                     <a class="glass project reveal" href="https://github.com/myendmess/Market-Scan" target="_blank" rel="noopener">
                         <div class="project__top">
-                            <span class="project__tag project__tag--live">Active</span>
+                            <span class="project__tag project__tag--live" data-i18n="proj.active">Active</span>
                             <span class="project__link" aria-hidden="true">↗</span>
                         </div>
                         <h3 class="project__title">Market-Scan</h3>
-                        <p class="project__desc">Algorithmic equity scanners — a long-term GARP screen (Finnhub) and a short-term scan (Alpha Vantage) — running on scheduled GitHub Actions cron jobs.</p>
+                        <p class="project__desc" data-i18n="proj1.desc">Algorithmic equity scanners — a long-term GARP screen (Finnhub) and a short-term scan (Alpha Vantage) — running on scheduled GitHub Actions cron jobs.</p>
                         <ul class="taglist taglist--sm">
                             <li>Python</li><li>Finnhub</li><li>Alpha Vantage</li><li>GitHub Actions</li>
                         </ul>
@@ -297,8 +305,8 @@
                             <span class="project__tag">AI · Audio</span>
                             <span class="project__link" aria-hidden="true">↗</span>
                         </div>
-                        <h3 class="project__title">Conversational AI</h3>
-                        <p class="project__desc">A voice chatbot built on Azure Cognitive Services — Text-to-Speech, Speech-to-Text, and NLP — with LUIS intent recognition for natural, human-like interaction.</p>
+                        <h3 class="project__title" data-i18n="proj2.title">Conversational AI</h3>
+                        <p class="project__desc" data-i18n="proj2.desc">A voice chatbot built on Azure Cognitive Services — Text-to-Speech, Speech-to-Text, and NLP — with LUIS intent recognition for natural, human-like interaction.</p>
                         <ul class="taglist taglist--sm">
                             <li>Azure</li><li>TTS / STT</li><li>NLP</li><li>LUIS</li>
                         </ul>
@@ -306,23 +314,23 @@
 
                     <a class="glass project reveal" href="https://github.com/myendmess/daily-quote" target="_blank" rel="noopener">
                         <div class="project__top">
-                            <span class="project__tag">Automation</span>
+                            <span class="project__tag" data-i18n="proj.automation">Automation</span>
                             <span class="project__link" aria-hidden="true">↗</span>
                         </div>
-                        <h3 class="project__title">GitHub Automation</h3>
-                        <p class="project__desc">Scheduled GitHub Actions workflows that run on a cron, unattended — fetching data, committing results back to the repo, and keeping content refreshed without manual intervention.</p>
+                        <h3 class="project__title" data-i18n="proj3.title">GitHub Automation</h3>
+                        <p class="project__desc" data-i18n="proj3.desc">Scheduled GitHub Actions workflows that run on a cron, unattended — fetching data, committing results back to the repo, and keeping content refreshed without manual intervention.</p>
                         <ul class="taglist taglist--sm">
                             <li>GitHub Actions</li><li>Cron</li><li>CI/CD</li><li>Git</li>
                         </ul>
                     </a>
 
-                    <a class="glass project reveal" href="https://www.linkedin.com/in/mboujnane" target="_blank" rel="noopener">
+                    <a class="glass project reveal" href="https://github.com/myendmess/01_Data_Analytics" target="_blank" rel="noopener">
                         <div class="project__top">
-                            <span class="project__tag">Production</span>
+                            <span class="project__tag" data-i18n="proj.production">Production</span>
                             <span class="project__link" aria-hidden="true">↗</span>
                         </div>
-                        <h3 class="project__title">AI Data Pipelines</h3>
-                        <p class="project__desc">End-to-end analytics pipelines from raw tables to reporting models, built with dbt and Snowflake/Databricks and surfaced in Looker &amp; Tableau — accelerated by AI-assisted, multi-agent workflows.</p>
+                        <h3 class="project__title" data-i18n="proj4.title">AI Data Pipelines</h3>
+                        <p class="project__desc" data-i18n="proj4.desc">End-to-end analytics pipelines from raw tables to reporting models, built with dbt and Snowflake/Databricks and surfaced in Looker &amp; Tableau — accelerated by AI-assisted, multi-agent workflows.</p>
                         <ul class="taglist taglist--sm">
                             <li>dbt</li><li>Snowflake</li><li>Looker</li><li>Multi-Agent</li>
                         </ul>
@@ -336,9 +344,9 @@
     <footer class="footer" id="contact">
         <div class="container footer__inner">
             <div class="footer__cta reveal">
-                <span class="section__kicker">// get in touch</span>
-                <h2 class="footer__title">Let's build where <span class="grad">tech meets finance</span>.</h2>
-                <p class="footer__sub">Open to hybrid roles in Financial Data Analysis, FinTech data engineering, and FinOps.</p>
+                <span class="section__kicker" data-i18n="foot.kicker">// get in touch</span>
+                <h2 class="footer__title" data-i18n="foot.title">Let's build where <span class="grad">tech meets finance</span>.</h2>
+                <p class="footer__sub" data-i18n="foot.sub">Open to hybrid roles in Financial Data Analysis, FinTech data engineering, and FinOps.</p>
             </div>
 
             <nav class="footer__links" aria-label="Contact and social">
@@ -358,7 +366,6 @@
         </div>
         <div class="container footer__base">
             <span>© <span id="year">2026</span> Mohamed Boujnane</span>
-            <span class="footer__loc">Codogno (LO), Italy · Trilingual</span>
         </div>
     </footer>
 
