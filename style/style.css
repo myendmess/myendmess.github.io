@@ -171,6 +171,12 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -0.02em; font-weight: 700; }
 .taglist li:hover { color: var(--text); border-color: var(--border-2); }
 .taglist--sm li { font-size: 0.72rem; padding: 0.22rem 0.55rem; }
 
+/* clickable chips (e.g. certifications -> external link) */
+.taglist--links li { padding: 0; border: 0; background: none; }
+.taglist--links a { display: inline-flex; align-items: center; gap: 0.34rem; font-family: var(--mono); font-size: 0.72rem; color: var(--muted); border: 1px solid var(--border); background: var(--surface-2); padding: 0.22rem 0.55rem; border-radius: 999px; transition: color 0.2s, border-color 0.2s, box-shadow 0.2s; }
+.taglist--links a:hover { color: var(--text); border-color: var(--primary); box-shadow: 0 0 18px -8px var(--glow-cyan); }
+.taglist--links .ext { opacity: 0.55; }
+
 /* buttons */
 .btn { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; font-size: 0.95rem; padding: 0.8rem 1.5rem; border-radius: 999px; transition: transform 0.15s, box-shadow 0.25s, border-color 0.2s; }
 .btn:active { transform: translateY(1px); }
