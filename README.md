@@ -49,10 +49,6 @@ Every contribution, big or small, is greatly appreciated.
 │   └── main.js         # Mobile nav, scroll-reveal, constellation canvas
 ├── img
 │   └── qrcode.png      # PayPal donation QR
-├── portfolio           # Earlier portfolio sub-site (kept, self-contained)
-│   ├── index.html
-│   ├── img/
-│   └── script/         # css / js / scss
 ├── LICENSE
 └── README.md
 ```
