@@ -1,0 +1,163 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------
+   Semantic theme tokens — dark by default, light via [data-theme].
+   Brand carried over from v1: near-black navy page, amber→orange
+   neon accent, cyan/violet ambient glows, glassmorphism surfaces.
+   ------------------------------------------------------------------ */
+:root {
+	color-scheme: dark;
+	--t-page: #060910;
+	--t-page-soft: #0a0f1a;
+	--t-surface: rgba(148, 163, 184, 0.06);
+	--t-surface-2: rgba(148, 163, 184, 0.12);
+	--t-line: rgba(148, 163, 184, 0.16);
+	--t-fg: #e9ecf5;
+	--t-fg-soft: #a8afc3;
+	--t-fg-faint: #737b93;
+	--t-accent: #fbbf24;
+	--t-accent-2: #fb923c;
+	--t-on-accent: #1a1204;
+	--t-glow-1: rgba(34, 211, 238, 0.09);
+	--t-glow-2: rgba(139, 92, 246, 0.09);
+}
+
+[data-theme='light'] {
+	color-scheme: light;
+	--t-page: #f6f7fb;
+	--t-page-soft: #eef0f7;
+	--t-surface: #ffffff;
+	--t-surface-2: #eef0f7;
+	--t-line: rgba(15, 23, 42, 0.14);
+	--t-fg: #131625;
+	--t-fg-soft: #414a61;
+	--t-fg-faint: #667089;
+	--t-accent: #b45309;
+	--t-accent-2: #c2410c;
+	--t-on-accent: #fff8ec;
+	--t-glow-1: rgba(34, 211, 238, 0.16);
+	--t-glow-2: rgba(139, 92, 246, 0.13);
+}
+
+@theme inline {
+	--color-page: var(--t-page);
+	--color-page-soft: var(--t-page-soft);
+	--color-surface: var(--t-surface);
+	--color-surface-2: var(--t-surface-2);
+	--color-line: var(--t-line);
+	--color-fg: var(--t-fg);
+	--color-fg-soft: var(--t-fg-soft);
+	--color-fg-faint: var(--t-fg-faint);
+	--color-accent: var(--t-accent);
+	--color-accent-2: var(--t-accent-2);
+	--color-on-accent: var(--t-on-accent);
+}
+
+@theme {
+	--font-sans: 'Inter', 'Noto Sans JP', ui-sans-serif, system-ui, sans-serif;
+	--font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
+}
+
+::selection {
+	background-color: var(--t-accent);
+	color: var(--t-on-accent);
+}
+
+/* Gradient text (used inside translated copy — keep class names stable) */
+.grad {
+	background-image: linear-gradient(92deg, var(--t-accent), var(--t-accent-2));
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+.grad--alt {
+	background-image: linear-gradient(92deg, #22d3ee, #8b5cf6);
+}
+[data-theme='light'] .grad--alt {
+	background-image: linear-gradient(92deg, #0e7490, #6d28d9);
+}
+
+/* Glass card primitive */
+.glass {
+	background-color: var(--t-surface);
+	border: 1px solid var(--t-line);
+	border-radius: var(--radius-xl);
+	backdrop-filter: blur(12px);
+}
+[data-theme='light'] .glass {
+	box-shadow: 0 1px 3px rgba(15, 23, 42, 0.07);
+}
+
+/* Decorative background grid */
+.bg-grid {
+	background-image:
+		linear-gradient(var(--t-line) 1px, transparent 1px),
+		linear-gradient(90deg, var(--t-line) 1px, transparent 1px);
+	background-size: 44px 44px;
+	opacity: 0.35;
+	mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 30%, transparent 75%);
+}
+
+/* Terminal syntax colors */
+.c-prompt {
+	color: var(--t-accent);
+}
+.c-flag {
+	color: #22d3ee;
+}
+[data-theme='light'] .c-flag {
+	color: #0e7490;
+}
+.c-dim {
+	color: var(--t-fg-faint);
+}
+.c-ok {
+	color: #34d399;
+}
+[data-theme='light'] .c-ok {
+	color: #047857;
+}
+.c-accent {
+	color: var(--t-accent-2);
+}
+
+/* Scroll reveal (progressive enhancement: without JS everything stays visible) */
+html.js .reveal {
+	opacity: 0;
+	transform: translateY(14px);
+	transition:
+		opacity 0.6s ease,
+		transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+html.js .reveal.in-view {
+	opacity: 1;
+	transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+	html.js .reveal {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
