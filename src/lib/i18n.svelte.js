@@ -74,10 +74,7 @@ const messages = {
 		'proj4.desc':
 			'End-to-end analytics pipelines from raw tables to reporting models, built with dbt and Snowflake/Databricks and surfaced in Looker &amp; Tableau — accelerated by AI-assisted, multi-agent workflows.',
 		'foot.kicker': '// get in touch',
-		'foot.title': "Let's build where <span class=\"grad\">tech meets finance</span>.",
-		'foot.sub':
-			'Open to hybrid roles in Financial Data Analysis, FinTech data engineering, and FinOps.'
-	},
+		'foot.title': "Let's build where <span class=\"grad\">tech meets finance</span>.",	},
 	it: {
 		'nav.skip': 'Vai al contenuto',
 		'nav.exp': 'Esperienza',
@@ -139,10 +136,7 @@ const messages = {
 		'proj4.desc':
 			"Pipeline analitiche end-to-end, dalle tabelle grezze ai modelli di reporting, costruite con dbt e Snowflake/Databricks e presentate in Looker e Tableau — accelerate da flussi di lavoro multi-agente assistiti dall'AI.",
 		'foot.kicker': '// mettiamoci in contatto',
-		'foot.title': 'Costruiamo dove <span class="grad">la tecnologia incontra la finanza</span>.',
-		'foot.sub':
-			'Aperto a ruoli ibridi in Analisi di Dati Finanziari, data engineering FinTech e FinOps.'
-	},
+		'foot.title': 'Costruiamo dove <span class="grad">la tecnologia incontra la finanza</span>.',	},
 	fr: {
 		'nav.skip': 'Aller au contenu',
 		'nav.exp': 'Expérience',
@@ -207,10 +201,7 @@ const messages = {
 		'proj4.desc':
 			'Des pipelines analytiques de bout en bout, des tables brutes aux modèles de reporting, construits avec dbt et Snowflake/Databricks et restitués dans Looker &amp; Tableau — accélérés par des workflows multi-agents assistés par IA.',
 		'foot.kicker': '// prenons contact',
-		'foot.title': 'Construisons là où <span class="grad">la tech rencontre la finance</span>.',
-		'foot.sub':
-			'Ouvert à des rôles hybrides en Analyse de Données Financières, data engineering FinTech et FinOps.'
-	},
+		'foot.title': 'Construisons là où <span class="grad">la tech rencontre la finance</span>.',	},
 	ja: {
 		'nav.skip': 'コンテンツへスキップ',
 		'nav.exp': '経歴',
@@ -269,9 +260,7 @@ const messages = {
 		'proj4.desc':
 			'生テーブルからレポーティングモデルまでのエンドツーエンド分析パイプライン。dbtとSnowflake/Databricksで構築し、Looker &amp; Tableauで可視化 — AI支援のマルチエージェント・ワークフローで加速。',
 		'foot.kicker': '// お問い合わせ',
-		'foot.title': '<span class="grad">テクノロジーと金融が出会う</span>場所をつくろう。',
-		'foot.sub': '金融データ分析、FinTechデータエンジニアリング、FinOpsのハイブリッド職に関心があります。'
-	}
+		'foot.title': '<span class="grad">テクノロジーと金融が出会う</span>場所をつくろう。',	}
 };
 
 const state = $state({ lang: 'en' });
