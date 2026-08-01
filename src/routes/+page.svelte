@@ -83,12 +83,12 @@
 			url: 'https://www.credly.com/badges/556107ba-9ad9-4766-8ce4-dc9822e1fe80/public_url'
 		},
 		{
-			name: 'Google Data Analytics',
-			issuer: 'Google · via Coursera',
+			name: 'IBM Generative AI Engineering',
+			issuer: 'IBM · via Coursera · 16 badges',
 			platform: 'Credly',
-			letter: 'G',
-			color: '#4285F4',
-			url: 'https://www.credly.com/badges/0693567e-025f-4bfc-ba9d-d1e1e4e23c0b/public_url'
+			letter: 'I',
+			color: '#0F62FE',
+			url: 'https://www.credly.com/users/mohamed-boujnane/badges'
 		},
 		{
 			name: 'Google Business Intelligence',
@@ -154,14 +154,14 @@
 </script>
 
 <svelte:head>
-	<title>Mohamed Boujnane — IT & AI Consultant · FinTech & Data</title>
+	<title>Mohamed Boujnane — AI Engineer · FinTech & Data · Business Intelligence Analyst</title>
 	<meta
 		name="description"
 		content="Mohamed Boujnane — Data & AI specialist working where technology meets finance. Python data pipelines, BI, AI automation, and algorithmic market scanners."
 	/>
 	<link rel="canonical" href="https://myendmess.github.io/" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Mohamed Boujnane — IT & AI Consultant · FinTech & Data" />
+	<meta property="og:title" content="Mohamed Boujnane — AI Engineer · FinTech & Data · Business Intelligence Analyst" />
 	<meta
 		property="og:description"
 		content="Data & AI specialist working where technology meets finance. Pipelines, BI, automation, and algorithmic market scanners."
@@ -172,7 +172,7 @@
 		'@context': 'https://schema.org',
 		'@type': 'Person',
 		name: 'Mohamed Boujnane',
-		jobTitle: 'IT & AI Consultant',
+		jobTitle: 'AI Engineer',
 		url: 'https://myendmess.github.io/',
 		sameAs: ['https://github.com/myendmess', 'https://www.linkedin.com/in/mboujnane'],
 		knowsAbout: [
