@@ -143,11 +143,12 @@
 		{
 			staticTitle: null,
 			titleKey: 'proj4.title',
-			tagKey: 'proj.production',
+			tagKey: null,
+			staticTag: 'AI · LLMs',
 			live: false,
 			descKey: 'proj4.desc',
-			url: 'https://github.com/myendmess/01_Data_Analytics',
-			tags: ['dbt', 'Snowflake', 'Looker', 'Multi-Agent']
+			url: 'https://myendmess.github.io/ibm-generative-ai-engineering/',
+			tags: ['PyTorch', 'Transformers', 'LangChain', 'RAG', 'watsonx']
 		}
 	];
 </script>

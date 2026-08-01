@@ -58,10 +58,9 @@ const messages = {
 		edu3: '<strong>I.T.I. Alessandro Volta</strong> — Diploma, Computer Science &amp; IT (EQF 4) <span>2016–21</span>',
 		'proj.kicker': '// build log',
 		'proj.title': 'Projects',
-		'proj.sub': 'Active work across algorithmic market scanning, AI automation, and data engineering.',
+		'proj.sub': 'Active work across algorithmic market scanning, AI automation, and generative AI.',
 		'proj.active': 'Finance',
 		'proj.automation': 'Automation',
-		'proj.production': 'Production',
 		'proj1.desc':
 			'Algorithmic equity scanners — a long-term GARP screen (Finnhub) and a short-term scan (Alpha Vantage) — running on scheduled GitHub Actions cron jobs, plus a live S&amp;P 500 heatmap dashboard.',
 		'proj2.title': 'Conversational AI',
@@ -70,9 +69,9 @@ const messages = {
 		'proj3.title': 'GitHub Automation',
 		'proj3.desc':
 			'Scheduled GitHub Actions workflows that run on a cron, unattended — fetching data, committing results back to the repo, and keeping content refreshed without manual intervention.',
-		'proj4.title': 'AI Data Pipelines',
+		'proj4.title': 'Generative AI Engineering',
 		'proj4.desc':
-			'End-to-end analytics pipelines from raw tables to reporting models, built with dbt and Snowflake/Databricks and surfaced in Looker &amp; Tableau — accelerated by AI-assisted, multi-agent workflows.',
+			'The complete IBM Generative AI Engineering certificate build — 32 lab notebooks and two applications spanning transformers, fine-tuning, RLHF and retrieval-augmented generation, capped by a RAG question-answering bot on watsonx and LangChain.',
 		'foot.kicker': '// get in touch',
 		'foot.title': "Let's build where <span class=\"grad\">tech meets finance</span>.",	},
 	it: {
@@ -120,10 +119,9 @@ const messages = {
 		'proj.kicker': '// progetti',
 		'proj.title': 'Progetti',
 		'proj.sub':
-			'Lavori attivi tra scansione algoritmica dei mercati, automazione AI e data engineering.',
+			'Lavori attivi tra scansione algoritmica dei mercati, automazione AI e AI generativa.',
 		'proj.active': 'Finanza',
 		'proj.automation': 'Automazione',
-		'proj.production': 'Produzione',
 		'proj1.desc':
 			"Scanner azionari algoritmici — uno screening GARP di lungo periodo (Finnhub) e una scansione di breve periodo (Alpha Vantage) — eseguiti su job cron pianificati con GitHub Actions, più una dashboard heatmap live dell'S&amp;P 500.",
 		'proj2.title': 'AI Conversazionale',
@@ -132,9 +130,9 @@ const messages = {
 		'proj3.title': 'Automazione GitHub',
 		'proj3.desc':
 			'Workflow di GitHub Actions pianificati che girano su cron, senza supervisione — recuperano dati, committano i risultati nel repo e mantengono i contenuti aggiornati senza interventi manuali.',
-		'proj4.title': 'Pipeline di Dati AI',
+		'proj4.title': 'Ingegneria Generative AI',
 		'proj4.desc':
-			"Pipeline analitiche end-to-end, dalle tabelle grezze ai modelli di reporting, costruite con dbt e Snowflake/Databricks e presentate in Looker e Tableau — accelerate da flussi di lavoro multi-agente assistiti dall'AI.",
+			'Il percorso completo del certificato IBM Generative AI Engineering — 32 notebook di laboratorio e due applicazioni su transformer, fine-tuning, RLHF e generazione aumentata dal recupero (RAG), con un bot di domande e risposte RAG su watsonx e LangChain come progetto finale.',
 		'foot.kicker': '// mettiamoci in contatto',
 		'foot.title': 'Costruiamo dove <span class="grad">la tecnologia incontra la finanza</span>.',	},
 	fr: {
@@ -185,10 +183,9 @@ const messages = {
 		'proj.kicker': '// projets',
 		'proj.title': 'Projets',
 		'proj.sub':
-			"Travaux en cours autour du scan algorithmique des marchés, de l'automatisation IA et du data engineering.",
+			"Travaux en cours autour du scan algorithmique des marchés, de l'automatisation IA et de l'IA générative.",
 		'proj.active': 'Finance',
 		'proj.automation': 'Automatisation',
-		'proj.production': 'Production',
 		'proj1.desc':
 			"Scanners d'actions algorithmiques — un filtre GARP de long terme (Finnhub) et un scan de court terme (Alpha Vantage) — exécutés via des tâches cron planifiées sur GitHub Actions, plus un tableau de bord heatmap S&amp;P 500 en direct.",
 		'proj2.title': 'IA Conversationnelle',
@@ -197,9 +194,9 @@ const messages = {
 		'proj3.title': 'Automatisation GitHub',
 		'proj3.desc':
 			"Des workflows GitHub Actions planifiés qui s'exécutent via cron, sans supervision — récupération des données, commit des résultats dans le dépôt et mise à jour continue du contenu sans intervention manuelle.",
-		'proj4.title': 'Pipelines de Données IA',
+		'proj4.title': 'Ingénierie IA Générative',
 		'proj4.desc':
-			'Des pipelines analytiques de bout en bout, des tables brutes aux modèles de reporting, construits avec dbt et Snowflake/Databricks et restitués dans Looker &amp; Tableau — accélérés par des workflows multi-agents assistés par IA.',
+			"Le parcours complet du certificat IBM Generative AI Engineering — 32 notebooks de laboratoire et deux applications couvrant les transformers, le fine-tuning, le RLHF et la génération augmentée par récupération (RAG), avec un bot de questions-réponses RAG sur watsonx et LangChain comme projet final.",
 		'foot.kicker': '// prenons contact',
 		'foot.title': 'Construisons là où <span class="grad">la tech rencontre la finance</span>.',	},
 	ja: {
@@ -244,10 +241,9 @@ const messages = {
 		'proj.kicker': '// プロジェクト',
 		'proj.title': 'プロジェクト',
 		'proj.sub':
-			'アルゴリズム型マーケットスキャン、AI自動化、データエンジニアリングにわたる進行中の取り組み。',
+			'アルゴリズム型マーケットスキャン、AI自動化、生成AIにわたる進行中の取り組み。',
 		'proj.active': '財政',
 		'proj.automation': '自動化',
-		'proj.production': '本番',
 		'proj1.desc':
 			'アルゴリズム型の株式スキャナー — 長期GARPスクリーン（Finnhub）と短期スキャン（Alpha Vantage） — GitHub Actionsのcronジョブで定期実行。ライブのS&amp;P 500ヒートマップダッシュボード付き。',
 		'proj2.title': '会話型AI',
@@ -256,9 +252,9 @@ const messages = {
 		'proj3.title': 'GitHub 自動化',
 		'proj3.desc':
 			'cronで定期実行されるGitHub Actionsワークフロー。無人でデータを取得し、結果をリポジトリにコミットして、手作業なしでコンテンツを最新に保ちます。',
-		'proj4.title': 'AIデータパイプライン',
+		'proj4.title': '生成AIエンジニアリング',
 		'proj4.desc':
-			'生テーブルからレポーティングモデルまでのエンドツーエンド分析パイプライン。dbtとSnowflake/Databricksで構築し、Looker &amp; Tableauで可視化 — AI支援のマルチエージェント・ワークフローで加速。',
+			'IBM Generative AI Engineering認定の全課程 — 32のラボノートブックと2つのアプリケーションで、トランスフォーマー、ファインチューニング、RLHF、検索拡張生成（RAG）を網羅。watsonxとLangChainによるRAG質問応答ボットが最終プロジェクト。',
 		'foot.kicker': '// お問い合わせ',
 		'foot.title': '<span class="grad">テクノロジーと金融が出会う</span>場所をつくろう。',	}
 };
