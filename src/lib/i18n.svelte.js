@@ -21,7 +21,7 @@ const messages = {
 		'nav.exp': 'Experience',
 		'nav.proj': 'Projects',
 		'nav.contact': 'Contact',
-		'hero.eyebrow': 'IT &amp; AI Consultant · FinTech &amp; Data',
+		'hero.eyebrow': 'AI Engineer · FinTech &amp; Data · Business Intelligence Analyst',
 		'hero.title':
 			'I build where <span class="grad">technology</span><br /> meets <span class="grad grad--alt">finance</span>.',
 		'hero.lede':
@@ -79,7 +79,7 @@ const messages = {
 		'nav.exp': 'Esperienza',
 		'nav.proj': 'Progetti',
 		'nav.contact': 'Contatti',
-		'hero.eyebrow': 'Consulente IT &amp; AI · FinTech &amp; Dati',
+		'hero.eyebrow': 'Ingegnere AI · FinTech &amp; Dati · Analista Business Intelligence',
 		'hero.title':
 			'Costruisco dove la <span class="grad">tecnologia</span><br /> incontra la <span class="grad grad--alt">finanza</span>.',
 		'hero.lede':
@@ -140,7 +140,7 @@ const messages = {
 		'nav.exp': 'Expérience',
 		'nav.proj': 'Projets',
 		'nav.contact': 'Contact',
-		'hero.eyebrow': 'Consultant IT &amp; IA · FinTech &amp; Données',
+		'hero.eyebrow': 'Ingénieur IA · FinTech &amp; Données · Analyste Business Intelligence',
 		'hero.title':
 			'Je bâtis là où la <span class="grad">technologie</span><br /> rencontre la <span class="grad grad--alt">finance</span>.',
 		'hero.lede':
@@ -204,7 +204,7 @@ const messages = {
 		'nav.exp': '経歴',
 		'nav.proj': 'プロジェクト',
 		'nav.contact': '連絡先',
-		'hero.eyebrow': 'IT・AIコンサルタント · FinTech &amp; データ',
+		'hero.eyebrow': 'AIエンジニア · FinTech &amp; データ · BIアナリスト',
 		'hero.title':
 			'<span class="grad">テクノロジー</span>と<span class="grad grad--alt">金融</span>が<br />出会う場所をつくる。',
 		'hero.lede':
