@@ -83,7 +83,7 @@
 		},
 		{
 			name: 'IBM Generative AI Engineering',
-			issuer: 'IBM · via Coursera · 16 badges',
+			issuer: 'IBM · via Coursera',
 			letter: 'I',
 			color: '#0F62FE',
 			url: 'https://github.com/myendmess/ibm-generative-ai-engineering'
@@ -97,7 +97,7 @@
 		},
 		{
 			name: 'Strengthen Your Business Savvy',
-			issuer: 'Coursera',
+			issuer: 'Harvard Business Review · via Coursera',
 			letter: 'H',
 			color: '#0056D2',
 			url: 'https://coursera.org/share/99fd6770db2f20a8e0f38604aadfbf41'
