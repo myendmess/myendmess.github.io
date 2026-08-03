@@ -77,15 +77,13 @@
 		{
 			name: 'Google Advanced Data Analytics',
 			issuer: 'Google · via Coursera',
-			platform: 'Credly',
 			letter: 'G',
 			color: '#4285F4',
 			url: 'https://www.credly.com/badges/556107ba-9ad9-4766-8ce4-dc9822e1fe80/public_url'
 		},
 		{
 			name: 'IBM Generative AI Engineering',
-			issuer: 'IBM · via Coursera · 16 badges',
-			platform: 'Credly',
+			issuer: 'IBM · via Coursera',
 			letter: 'I',
 			color: '#0F62FE',
 			url: 'https://github.com/myendmess/ibm-generative-ai-engineering'
@@ -93,16 +91,14 @@
 		{
 			name: 'Google Business Intelligence',
 			issuer: 'Google · via Coursera',
-			platform: 'Credly',
 			letter: 'G',
 			color: '#4285F4',
 			url: 'https://www.credly.com/badges/70d257d5-3ea8-47e8-9952-e047eee918f6/public_url'
 		},
 		{
 			name: 'Strengthen Your Business Savvy',
-			issuer: 'Coursera',
-			platform: 'Coursera',
-			letter: 'C',
+			issuer: 'Harvard Business Review · via Coursera',
+			letter: 'H',
 			color: '#0056D2',
 			url: 'https://coursera.org/share/99fd6770db2f20a8e0f38604aadfbf41'
 		}
@@ -377,7 +373,7 @@
 								<span class="block text-xs text-fg-faint">{cert.issuer}</span>
 							</span>
 							<span class="shrink-0 text-end">
-								<span class="block font-mono text-[11px] text-fg-faint">{cert.platform}</span>
+								<span class="block font-mono text-[11px] text-fg-faint">{t('cred.verify')}</span>
 								<span class="block font-mono text-xs text-fg-soft transition-all group-hover:translate-x-0.5 group-hover:text-accent">
 									<span class="sr-only">{t('cred.view')} — </span>↗
 								</span>
