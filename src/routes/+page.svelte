@@ -88,7 +88,7 @@
 			platform: 'Credly',
 			letter: 'I',
 			color: '#0F62FE',
-			url: 'https://www.credly.com/users/mohamed-boujnane/badges'
+			url: 'https://github.com/myendmess/ibm-generative-ai-engineering'
 		},
 		{
 			name: 'Google Business Intelligence',
